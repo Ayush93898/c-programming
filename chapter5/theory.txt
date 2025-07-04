@@ -1,0 +1,6 @@
+| Language       | Can call function before it's defined? | Why?                       |
+| -------------- | -------------------------------------- | -------------------------- |
+| **C**          | ❌ No (needs prototype)                 | Compiler reads top-down    |
+| **Java**       | ✅ Yes                                  | Full class is parsed first |
+| **JavaScript** | ✅ Yes (if declared, not assigned)      | Functions are hoisted      |
+

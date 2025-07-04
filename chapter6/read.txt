@@ -1,0 +1,18 @@
+🔹 What is a Pointer in C?
+A pointer is a variable that stores the memory address of another variable.
+Think of it like this:
+    Normal variable → holds a value
+    Pointer variable → holds an address
+
+🧠 Why use pointers?
+    To access and modify values indirectly
+    To pass values by reference (efficient for large data)
+    To work with arrays, strings, dynamic memory, and functions
+
+| Concept      | Meaning                                        |
+| ------------ | ---------------------------------------------- |
+| `&`          | Address-of operator — gives memory address     |
+| `*`          | Dereference operator — gets value from address |
+| `int *p`     | Declares a pointer to `int`                    |
+| `*p = value` | Sets value at the memory address               |
+| `p = &var`   | Stores address of var in pointer `p`           |
