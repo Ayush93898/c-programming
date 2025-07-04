@@ -7,6 +7,7 @@ int main(){
     int**k = &j;
     printf("The address of j is %p\n", &j); // The address of j is 0061FF14
 
+    // getting the value
     printf("value of i is %d \n", i); //value of i is 72 
     printf("value of i is %d \n", *j); //value of i is 72 
 

@@ -3,14 +3,14 @@
 int main()
 {
     int i = 56;
-    // now if i want to find the address of i variable then i have to use the address operator &
+    // now if i want to find the address of i variable then i have to use the address operator (&)
     printf("Address of i is %p \n", &i); // Address of i is 0061FF1C, (hexa-decimal)
-    printf("Address of i is %u \n", &i); // in integer ->  Address of i is 6422300
+    printf("Address of i is %u \n", &i); // in integer ->  Address of i is 6422300 (in number)
 
     // now i want to store the address of i varibale
     // here comes the concept of pointors
 
-    int *j = &i;                     // j is the pointor, pointing to i
+    int *j = &i;                     // j is the pointor, pointing to i, and contains the address of i
     printf("Address of i is %p\n", j); // Address of i is 0061FF18
 
     // now UNO-REVERSE ab agr adderess dia ho toh value kaise nikale
