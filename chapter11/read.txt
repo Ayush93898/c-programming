@@ -1,0 +1,13 @@
+  Basic Purpose
+
+    | Function   | Use                                        |
+    | ---------- | ------------------------------------------ |
+    | `malloc()` | Allocate memory (uninitialized)            |
+    | `calloc()` | Allocate memory **and** set it to **zero** |
+
+ Memory Initialization
+
+    | Function   | What’s inside memory after allocation? |
+    | ---------- | -------------------------------------- |
+    | `malloc()` | ❌ **Garbage values** (uninitialized)   |
+    | `calloc()` | ✅ **All values are 0**                 |
