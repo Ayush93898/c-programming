@@ -14,8 +14,8 @@ int main()
     struct Student* ptr = &s1;
 
     // access using pointor
+    printf("Name: %s\n",(*ptr).name); // but this look complex
     printf("Name: %s\n",ptr->name);
-    printf("Name: %s\n",(*ptr).name);
     printf("Age: %d\n",ptr->age);
 
     // modify by pointor

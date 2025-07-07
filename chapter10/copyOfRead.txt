@@ -1,0 +1,30 @@
+🧠 What is a File Pointer?
+A “FILE” is a structure which needs to be created for opening the file.
+A file pointer is a special pointer in C used to access a file (open, read, write, close, etc.).
+In C, you don’t directly work with files — you get a pointer to a file, and then use that pointer to do stuff.
+
+📌 Declaration:
+FILE *fp; // pointer to a file
+FILE *ptr; 
+ptr = fopen("filename.ext"; "mode"); 
+
+mode
+    "r"   -> open for reading  
+    "rb"  -> open for reading in binary  
+    "w"   -> open for writing // If the file exists, the contents will be 
+    overwritten 
+    "wb"  -> open for writing in binary 
+    "a"   -> open for append // If the file does not exist, it will be created
+
+✅ Common File Operations
+| Operation | Function                 | What it does                      |
+| --------- | ------------------------ | --------------------------------- |
+| Open      | `fopen()`                | Open file and return file pointer |
+| Read      | `fscanf()` or `fgets()`  | Read data from file               |
+| Write     | `fprintf()` or `fputs()` | Write data to file                |
+| Close     | `fclose()`               | Close the file                    |
+
+| Function        | Purpose                           |
+| --------------- | --------------------------------- |
+| `fgetc(fp)`     | Reads **one character** from file |
+| `fputc(ch, fp)` | Writes **one character** to file  |
